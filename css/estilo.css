@@ -1,0 +1,108 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: #121212;
+  }
+  
+  #quiz {
+    margin-top: 5%;
+  }
+
+  #pergunta{
+    color: white;
+  }
+  
+  button {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    border: none;
+  }
+  
+  .resposta {
+    margin: auto auto;
+    margin-bottom: 1%;
+    cursor: pointer;
+    background: rgba(0, 127, 255, 0.61);
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .resposta:hover {
+    background: rgb(0, 128, 255);
+  }
+  
+  .resposta.selecionada {
+    background: #4fa94fb0;
+  }
+  
+  #confirm {
+    margin: auto auto;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 15px;
+    background: rgb(0,127,255);
+    background: linear-gradient(90deg, rgba(0,127,255,1) 0%, rgba(0,128,0,1) 50%, rgba(255,215,0,1) 100%);
+  }
+  
+  #confirm:hover {
+    background: green;
+  }
+  
+  .errada {
+    background: red;
+    color: white;
+  }
+  
+  .correta {
+    background: green;
+    color: white;
+    animation: piscaCerto 0.5s infinite;
+  }
+  
+  @keyframes piscaCerto {
+    0%,
+    49% {
+      background: green;
+    }
+    50%,
+    100% {
+      background: seagreen;
+    }
+  }
+  
+  #status {
+    padding: 10%;
+  }
+  
+  #novoJogo {
+    margin:auto auto;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 15px;
+    background: rgb(0,127,255);
+    background: linear-gradient(90deg, rgba(0,127,255,1) 0%, rgba(0,128,0,1) 50%, rgba(255,215,0,1) 100%);
+  }
+  
+  .oculto {
+    display: none;
+  }
+
+  #mensagem{
+    color: white;
+  }
+  
